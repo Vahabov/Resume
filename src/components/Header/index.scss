@@ -1,0 +1,55 @@
+$siteColor: rgb(2, 168, 2);
+$bgSite: #26262d;
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    background-color: $bgSite;
+    z-index: 10;
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0px 30px;
+
+        li {
+            .active_link {
+                color: #fff;
+                &::before {
+                    width: 100% !important;
+                }
+            }
+            a {
+                position: relative;
+                font-size: 16px;
+                color: #c2c2c2;
+                margin-left: 30px;
+                transition: .3s;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    bottom: -5px;
+                    left: 50%;
+                    height: 3px;
+                    width: 0px;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    transform: translate(-50%, 0%);
+                    transition: .3s;
+                    overflow: hidden;
+                }
+            }
+            &:hover {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

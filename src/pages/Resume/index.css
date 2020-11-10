@@ -1,0 +1,233 @@
+.resume_page {
+  padding-bottom: 100px;
+}
+
+.resume_page .info_me .about_me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.resume_page .info_me .about_me .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 30px;
+  background-color: #c2c2c2;
+}
+
+.resume_page .info_me .about_me .avatar img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.resume_page .info_me .about_me .text {
+  width: 86%;
+  letter-spacing: 1px;
+}
+
+.resume_page .info_me .about_me .text h3 {
+  font-size: 18px;
+}
+
+.resume_page .info_me .special_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.resume_page .info_me .special_info .col .line {
+  margin-bottom: 10px;
+}
+
+.resume_page .info_me .special_info .col .line span,
+.resume_page .info_me .special_info .col .line a {
+  font-size: 15px;
+}
+
+.resume_page .info_me .special_info .col .line span:first-child,
+.resume_page .info_me .special_info .col .line a:first-child {
+  color: #02a802;
+}
+
+.resume_page .info_me .download_btn {
+  width: 200px;
+  height: 40px;
+  background-color: #02a802;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+  font-size: 15px;
+  border-radius: 3px;
+}
+
+.resume_page .info_edu_exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 100px;
+}
+
+.resume_page .info_edu_exp .column {
+  width: 48%;
+}
+
+.resume_page .info_edu_exp .column .item_info {
+  padding: 0px 0px 30px 30px;
+  position: relative;
+}
+
+.resume_page .info_edu_exp .column .item_info:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #02a802;
+  left: 0px;
+  top: 14px;
+}
+
+.resume_page .info_edu_exp .column .item_info .date {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 5px;
+  border: 1px solid #02a802;
+  position: relative;
+  color: #02a802;
+}
+
+.resume_page .info_edu_exp .column .item_info .date::before {
+  content: "";
+  position: absolute;
+  width: 31px;
+  height: 1px;
+  background-color: #02a802;
+  left: -31px;
+  top: 12.5px;
+}
+
+.resume_page .info_edu_exp .column .item_info p {
+  color: #a2a2a6;
+}
+
+.resume_page .skills {
+  margin-top: 100px;
+}
+
+.resume_page .skills .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.resume_page .skills .items .item {
+  width: 120px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.resume_page .skills .items .item:not(:nth-child(7n + 7)) {
+  margin-right: 25px;
+}
+
+.resume_page .skills .items .item .title_item {
+  font-size: 17px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .resume_page .skills .items .item:not(:nth-child(7n + 7)) {
+    margin-right: 33px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resume_page .info_me .about_me {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .resume_page .info_me .about_me .avatar {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  .resume_page .info_me .about_me .text h3 {
+    text-align: center;
+    font-size: 17px;
+  }
+  .resume_page .info_me .special_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume_page .info_edu_exp {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume_page .info_edu_exp .column {
+    width: 100%;
+  }
+  .resume_page .skills .items {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .resume_page .skills .items .item {
+    width: 47%;
+  }
+  .resume_page .skills .items .item:not(:nth-child(7n + 7)) {
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

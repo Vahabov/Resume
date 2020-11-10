@@ -1,0 +1,67 @@
+header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #26262d;
+  z-index: 10;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 0px 30px;
+}
+
+header ul li .active_link {
+  color: #fff;
+}
+
+header ul li .active_link::before {
+  width: 100% !important;
+}
+
+header ul li a {
+  position: relative;
+  font-size: 16px;
+  color: #c2c2c2;
+  margin-left: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+header ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 3px;
+  width: 0px;
+  background-color: #fff;
+  border-radius: 3px;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: hidden;
+}
+
+header ul li:hover a {
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */

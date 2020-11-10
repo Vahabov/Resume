@@ -1,0 +1,233 @@
+$siteColor: rgb(2, 168, 2);
+$bgSite: #26262d;
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0px;
+    background-color: $bgSite;
+    * {
+        box-sizing: border-box;
+        font-family: monospace;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+    }
+    &::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+    }
+}
+
+button,
+input,
+textarea {
+    border: none;
+    background-color: transparent;
+    padding: 0px;
+    transition: 0.3s;
+    -webkit-tap-highlight-color: transparent;
+    &:focus {
+        outline: none;
+        border: none;
+        background-color: none;
+        box-shadow: none;
+    }
+}
+.container {
+    max-width: 1000px;
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+}
+button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+div {
+    -webkit-tap-highlight-color: transparent;
+}
+p,
+span,
+strong,
+label,
+select,
+a {
+    -webkit-tap-highlight-color: transparent;
+    margin: 0px;
+    color: #fff;
+}
+@for $i from 1 through 6 {
+    h#{$i} {
+        color: #fff;
+        margin: 0px;
+    }
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+
+    &:focus {
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.title_sections {
+    box-shadow: inset 0 -6px 0px #666666;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+// Animations
+
+.glitch_effect {
+    color: white;
+    position: relative;
+    margin: 0px auto;
+    text-align: center;
+}
+@keyframes noise-anim {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            $top: random(100);
+            $bottom: random(101 - $top);
+            clip-path: inset(#{$top}% 0 #{$bottom}% 0);
+        }
+    }
+}
+.glitch_effect::after {
+    width: 100%;
+    content: attr(data-text);
+    position: absolute;
+    left: calc(50% + 2px);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-shadow: -1px 0 red;
+    color: white;
+    background: $bgSite;
+    overflow: hidden;
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+    $steps: 20;
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            $top: random(100);
+            $bottom: random(101 - $top);
+            clip-path: inset(#{$top}% 0 #{$bottom}% 0);
+        }
+    }
+}
+.glitch_effect::before {
+    width: 100%;
+    content: attr(data-text);
+    position: absolute;
+    left: calc(50% - -2px);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    text-shadow: 1px 0 blue;
+    color: white;
+    background: $bgSite;
+    overflow: hidden;
+    animation: noise-anim-2 15s infinite linear alternate-reverse;
+}
+
+////////////////////////////////////////////////////////////////////
+
+.scroll_mouse {
+    margin-top: 50px;
+    .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+    }
+    .scroller {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+        animation-iteration-count: infinite;
+    }
+}
+
+
+@keyframes scroll {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}
+
+// ///////////////////////////////////////////////////
+
+.typewriter h1 {
+    color: #fff;
+    overflow: hidden;
+    border-right: 0.15em solid $siteColor;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: $siteColor;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        padding: 0px 20px;
+    }
+    .typewriter{
+
+        h1{
+            font-size: 20px;
+        }
+    }
+}

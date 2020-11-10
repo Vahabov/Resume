@@ -1,0 +1,47 @@
+.intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    .title{
+        font-size: 80px;
+        margin-bottom: 15px;
+    }
+    .breadcrumb_row {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        li {
+            font-size: 12px;
+            color: #fff;
+            a {
+                &::after {
+                    content: "/";
+                    position: relative;
+                    top: 1px;
+                    padding: 0px 5px;
+                    margin: 0px 6px;
+                    transform: rotate(90deg);
+                    color: #a2a2a6 !important;
+                }
+                font-size: 12px;
+                color: #a2a2a6;
+                &:hover{
+                    color:  #fff;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .intro{
+        .title{
+            font-size: 45px;
+        }
+    }
+}

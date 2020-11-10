@@ -1,0 +1,2 @@
+export const GET_EXPERIENCE = "GET_EXPERIENCE";
+export const GET_M_PORTFOLİO = "GET_M_PORTFOLİO";

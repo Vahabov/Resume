@@ -1,0 +1,176 @@
+$siteColor: rgb(2, 168, 2);
+$bgSite: #26262d;
+
+.resume_page {
+    padding-bottom: 100px;
+    .info_me {
+        .about_me {
+            display: flex;
+            align-items: flex-start;
+            .avatar {
+                width: 120px;
+                height: 120px;
+                border-radius: 100%;
+                overflow: hidden;
+                margin-right: 30px;
+                background-color: rgb(194, 194, 194);
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                width: 86%;
+                letter-spacing: 1px;
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+        .special_info {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 40px;
+            .col {
+                .line {
+                    margin-bottom: 10px;
+                    span,
+                    a {
+                        font-size: 15px;
+                        &:first-child {
+                            color: $siteColor;
+                        }
+                    }
+                }
+            }
+        }
+        .download_btn {
+            width: 200px;
+            height: 40px;
+            background-color: $siteColor;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            font-size: 15px;
+            border-radius: 3px;
+        }
+    }
+    .info_edu_exp {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 100px;
+        .column {
+            width: 48%;
+            .item_info {
+                padding: 0px 0px 30px 30px;
+                position: relative;
+                &:not(:last-child) {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 1px;
+                        height: 100%;
+                        background-color: $siteColor;
+                        left: 0px;
+                        top: 14px;
+                    }
+                }
+                .date {
+                    display: inline-block;
+                    margin-bottom: 30px;
+                    padding: 5px;
+                    border: 1px solid $siteColor;
+                    position: relative;
+                    color: $siteColor;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 31px;
+                        height: 1px;
+                        background-color: $siteColor;
+                        left: -31px;
+                        top: 12.5px;
+                    }
+                }
+                p {
+                    color: #a2a2a6;
+                }
+            }
+        }
+    }
+    .skills {
+        margin-top: 100px;
+        .items {
+            display: flex;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .item {
+                &:not(:nth-child(7n + 7)) {
+                    margin-right: 25px;
+                }
+                width: 120px;
+                margin-bottom: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                .title_item {
+                    font-size: 17px;
+                    margin-top: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .resume_page .skills .items .item:not(:nth-child(7n + 7)){
+        margin-right: 33px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .resume_page {
+        .info_me {
+            .about_me {
+                flex-direction: column;
+                align-items: center;
+                .avatar{
+                    margin-bottom: 20px;
+                    margin-right: 0px;
+                }
+                .text{
+                    h3{
+                        text-align: center;
+                        font-size: 17px;
+                    }
+                }
+            }
+            .special_info{
+                flex-direction: column;
+            }
+        }
+        .info_edu_exp{
+            flex-direction: column;
+            .column{
+                width: 100%;
+            }
+        }
+        .skills{
+            .items{
+                justify-content: space-between;
+                .item{
+                    &:not(:nth-child(7n + 7)){
+                        margin-right: 0px;
+                    }
+                    width: 47%;
+                }
+            }
+        }
+    }
+}
