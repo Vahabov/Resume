@@ -71,7 +71,7 @@ export default function Resume() {
                             </div>
                         </div>
                     </div>
-                    <a href={CV} download className="download_btn">Download CV</a>
+                    {/* <a href={CV} download className="download_btn">Download CV</a> */}
                 </div>
                 <div className="info_edu_exp">
                     <div className="column">
@@ -82,7 +82,7 @@ export default function Resume() {
                                     <div key={item.date + index} className="item_info">
                                         <span className="date">{item.date}</span>
                                         <h3 className="job">{item.job}</h3>
-                                        <p>{item.content}</p>
+                                        <p>{item.position}</p>
                                     </div>
                                 )
                             })
@@ -96,7 +96,7 @@ export default function Resume() {
                                     <div key={item.date + index} className="item_info">
                                         <span className="date">{item.date}</span>
                                         <h3 className="job">{item.job}</h3>
-                                        <p>{item.content}</p>
+                                        <p>{item.position}</p>
                                     </div>
                                 )
                             })

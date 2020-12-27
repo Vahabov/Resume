@@ -6,29 +6,29 @@ const initialState = {
         {
             job: 'MOVER LLC',
             date: '2018 january - 2019 march',
-            content: 'Front end developer - WEB'
+            position: 'Front end developer - WEB'
         },
         {
             job: 'ONNEKS LAB',
             date: '2019 march - 2020 october',
-            content: 'Front end developer - WEB AND MOBILE'
+            position: 'Front end developer - WEB AND MOBILE'
         },
         {
             job: 'APA GROUP',
             date: '2020 october - Present',
-            content: 'Front end developer - WEB AND MOBILE'
+            position: 'Front end developer - WEB AND MOBILE'
         },
     ],
     education_data: [
         {
             job: 'Tech academy',
             date: '2017 october - 2018 january',
-            content: 'Full stack developer'
+            position: 'Full stack developer'
         },
         {
             job: 'Udemy & other courses',
             date: '2018 january - Present',
-            content: ''
+            position: ''
         },
        
     ],
@@ -59,11 +59,11 @@ const initialState = {
         },
         {
             skill: 'Vue JS',
-            percentage: 80
+            percentage: 70
         },
         {
             skill: 'Vuex',
-            percentage: 80
+            percentage: 70
         },
         {
             skill: 'Redux',
@@ -72,6 +72,10 @@ const initialState = {
         {
             skill: 'React Native',
             percentage: 80
+        },
+        {
+            skill: 'MobX',
+            percentage: 70
         },
         {
             skill: 'AJAX, JSON',

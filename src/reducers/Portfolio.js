@@ -8,11 +8,33 @@ import Runpizza from '../assets/images/Portfolios/runpizza.png';
 import Mover from '../assets/images/Portfolios/Mover.az.png';
 import Lent from '../assets/images/Portfolios/Lent.svg';
 import Apa from '../assets/images/Portfolios/Apa.svg';
+import Vesti from '../assets/images/Portfolios/vesti.svg';
+import Milliemlak from '../assets/images/Portfolios/milliemlak.svg';
 import Ezoterica from '../assets/images/Portfolios/Ezoterica.png';
 import Axor from '../assets/images/Portfolios/axor.png';
 
 const initialState = {
     portfolio_web: [
+        {
+            appName: 'Lent',
+            link: 'lent.az/',
+            img: Lent
+        },
+        {
+            appName: 'APA',
+            link: 'apa.az/',
+            img: Apa
+        },
+        {
+            appName: 'Vesti',
+            link: 'vesti.az/',
+            img: Vesti
+        },
+        {
+            appName: 'Milli əmlak',
+            link: 'milliemlak.az/',
+            img: Milliemlak
+        },
         {
             appName: 'Baku Taxi',
             link: 'site.bakutaxi.net/',
@@ -24,19 +46,19 @@ const initialState = {
             img: Aviasiya
         },
         {
+            appName: 'Ezoterica',
+            link: 'ezoterica.surge.sh/',
+            img: Ezoterica
+        },
+        {
+            appName: 'Axor Atego',
+            link: 'axor.surge.sh/',
+            img: Axor
+        },
+        {
             appName: 'Mover',
             link: 'www.mover.az/',
             img: Mover
-        },
-        {
-            appName: 'Lent',
-            link: 'lent.az/',
-            img: Lent
-        },
-        {
-            appName: 'APA',
-            link: 'apa.az/', 
-            img: Apa
         },
         {
             appName: 'Zimmer',
@@ -44,20 +66,10 @@ const initialState = {
             img: Zimmer
         },
         {
-            appName: 'Ezoterica',
-            link: 'ezoterica.surge.sh/',
-            img: Ezoterica
-        },
-        {
             appName: 'Run pizza',
             link: 'run-pizza.ru/',
             img: Runpizza
-        },
-        {
-            appName: 'Axor Atego',
-            link: 'axor.surge.sh/',
-            img: Axor
-        },
+        }, 
     ],
     portfolio_mobile: [
         {
@@ -80,7 +92,7 @@ const initialState = {
             link: 'apps.apple.com/gh/app/bakutaxi-driver/id1504709462',
             img: BTXD
         },
-        
+
     ],
 }
 
