@@ -14,8 +14,12 @@ import Apa from "../assets/images/Portfolios/Apa.svg";
 import Vesti from "../assets/images/Portfolios/vesti.svg";
 import Kulis from "../assets/images/Portfolios/Kulis.png";
 import Kargolux from "../assets/images/Portfolios/Kargolux.svg";
+import KargoLuxMobile from "../assets/images/Portfolios/KargoLux.webp";
+import Troni from "../assets/images/Portfolios/Troni.webp";
+import Medico from "../assets/images/Portfolios/Medico.webp";
 import Ezoterica from "../assets/images/Portfolios/Ezoterica.png";
 import Axor from "../assets/images/Portfolios/axor.png";
+import VirtualCard from "../assets/images/Portfolios/VirtualCard.webp";
 
 const initialState = {
   portfolio_web: [
@@ -93,8 +97,7 @@ const initialState = {
     },
     {
       appName: "Realest (androind)",
-      link:
-        "play.google.com/store/apps/details?id=com.onneks.realest&hl=en&gl=US",
+      link: "play.google.com/store/apps/details?id=com.onneks.realest&hl=en&gl=US",
       img: Realest,
     },
     {
@@ -109,8 +112,7 @@ const initialState = {
     },
     {
       appName: "Baku Taxi (Driver android)",
-      link:
-        "play.google.com/store/apps/details?id=com.bakutaxidriver&hl=en&gl=US",
+      link: "play.google.com/store/apps/details?id=com.bakutaxidriver&hl=en&gl=US",
       img: BTXD,
     },
     {
@@ -132,6 +134,41 @@ const initialState = {
       appName: "Avtovagzal (ios)",
       link: "apps.apple.com/az/app/avtovagzal-bus-tickets/id1467486522",
       img: Avtovagzal,
+    },
+    {
+      appName: "Virtual card (android)",
+      link: "play.google.com/store/apps/details?id=com.virtualcard&hl=en&gl=US",
+      img: VirtualCard,
+    },
+    {
+      appName: "KargoLux (android)",
+      link: "play.google.com/store/apps/details?id=com.kargolux&hl=en&gl=US",
+      img: KargoLuxMobile,
+    },
+    {
+      appName: "KargoLux (ios)",
+      link: "apps.apple.com/us/app/kargolux/id1620330187",
+      img: KargoLuxMobile,
+    },
+    {
+      appName: "Troni (android)",
+      link: "play.google.com/store/apps/details?id=com.troni&hl=en&gl=US",
+      img: Troni,
+    },
+    {
+      appName: "Troni (ios)",
+      link: "apps.apple.com/app/troni/id1618193154",
+      img: Troni,
+    },
+    {
+      appName: "Medico Cashback (android)",
+      link: "play.google.com/store/apps/details?id=com.medicoapp",
+      img: Medico,
+    },
+    {
+      appName: "Medico Cashback (ios)",
+      link: "apps.apple.com/az/app/medico-cashback/id6443469755",
+      img: Medico,
     },
   ],
 };

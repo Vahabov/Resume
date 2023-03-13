@@ -2,8 +2,8 @@ import React from "react";
 // import { Link } from 'react-router-dom';
 import Intro from "../../components/Intro";
 import "./index.css";
-import Avatar from "../../assets/images/avatar.png";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import Avatar from "../../assets/images/avatar.jpeg";
+// import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { motion } from "framer-motion";
 import { useSelector } from "react-redux";
@@ -12,9 +12,9 @@ import { useSelector } from "react-redux";
 export default function Resume() {
   const experience_data = useSelector((state) => state.resume.experience_data);
   const education_data = useSelector((state) => state.resume.education_data);
-  const skills = useSelector((state) => state.resume.skills);
-  const otherSkills = useSelector((state) => state.resume.otherSkills);
-  const languages = useSelector((state) => state.resume.languages);
+  // const skills = useSelector((state) => state.resume.skills);
+  // const otherSkills = useSelector((state) => state.resume.otherSkills);
+  // const languages = useSelector((state) => state.resume.languages);
 
   return (
     <motion.div
@@ -33,11 +33,13 @@ export default function Resume() {
             </div>
             <div className="text">
               <h3>
-                I have worked as a front-end developer with 3 years of work
-                experience. My extensive experience with designing and
-                developing using React to develop mobile and web applications. I
-                would be honored to bring my skills and work ethic to support
-                the team.
+                I have worked as a front-end developer with{" "}
+                {new Date().getFullYear() -
+                  new Date("01-10-2017").getFullYear()}{" "}
+                years of work experience. My extensive experience with designing
+                and developing using React to develop mobile and web
+                applications. I would be honored to bring my skills and work
+                ethic to support the team.
               </h3>
             </div>
           </div>
@@ -55,7 +57,11 @@ export default function Resume() {
             <div className="col">
               <div className="line">
                 <span>Age: </span>
-                <span>23 years</span>
+                <span>
+                  {new Date().getFullYear() -
+                    new Date("12-05-1997").getFullYear()}{" "}
+                  years
+                </span>
               </div>
               <div className="line">
                 <span>Residence: </span>
@@ -103,7 +109,7 @@ export default function Resume() {
             })}
           </div>
         </div>
-        <div className="skills">
+        {/* <div className="skills">
           <h3 className="title_sections">Skills</h3>
           <div className="items">
             {skills.map((item, index) => {
@@ -165,7 +171,7 @@ export default function Resume() {
               );
             })}
           </div>
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );
