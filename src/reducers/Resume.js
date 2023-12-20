@@ -9,23 +9,23 @@ const initialState = {
     },
     {
       job: "ONNEKS LAB",
-      date: "2019 march - 2020 october",
+      date: "2019 march - 2020 november",
       position: "Front end developer - WEB AND MOBILE",
     },
     {
       job: "APA GROUP",
-      date: "2020 october - 2021 may",
-      position: "Front end developer - WEB AND MOBILE",
+      date: "2020 november - 2021 april",
+      position: "Front end developer - WEB",
     },
     {
-      job: "Freelancer",
-      date: "2021 may - 2021 november",
-      position: "Front end developer - WEB AND MOBILE",
-    },
-    {
-      job: "Troni Investisiya QSC",
-      date: "2021 november - Present",
+      job: "Idealex cryptocurrency services",
+      date: "2021 august - 2023 november",
       position: "Front end developer - MOBILE",
+    },
+    {
+      job: "SkylineCrypto",
+      date: "2023 november - Present",
+      position: "Front end developer - WEB",
     },
   ],
   education_data: [

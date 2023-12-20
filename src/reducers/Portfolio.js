@@ -8,6 +8,7 @@ import BTXC from "../assets/images/Portfolios/btxC.webp";
 import BTXD from "../assets/images/Portfolios/btxD.webp";
 import Zimmer from "../assets/images/Portfolios/Zimmer.png";
 import Runpizza from "../assets/images/Portfolios/runpizza.png";
+import Skyline from "../assets/images/Portfolios/skyline.png";
 import Mover from "../assets/images/Portfolios/Mover.az.png";
 import Lent from "../assets/images/Portfolios/Lent.svg";
 import Apa from "../assets/images/Portfolios/Apa.svg";
@@ -20,6 +21,7 @@ import Medico from "../assets/images/Portfolios/Medico.webp";
 import Ezoterica from "../assets/images/Portfolios/Ezoterica.png";
 import Axor from "../assets/images/Portfolios/axor.png";
 import VirtualCard from "../assets/images/Portfolios/VirtualCard.webp";
+import Onepoint from "../assets/images/Portfolios/Onepoint.webp";
 
 const initialState = {
   portfolio_web: [
@@ -82,6 +84,11 @@ const initialState = {
       appName: "Run pizza",
       link: "run-pizza.ru/",
       img: Runpizza,
+    },
+    {
+      appName: "Skyline crypro",
+      link: "skylinecrypto.com.tr/",
+      img: Skyline,
     },
   ],
   portfolio_mobile: [
@@ -169,6 +176,11 @@ const initialState = {
       appName: "Medico Cashback (ios)",
       link: "apps.apple.com/az/app/medico-cashback/id6443469755",
       img: Medico,
+    },
+    {
+      appName: "OnePoint (ios)",
+      link: "apps.apple.com/az/app/onepoint-az/id6462992552",
+      img: Onepoint,
     },
   ],
 };
